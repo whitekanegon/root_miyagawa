@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>メールフォームCGI　管理ページ &gt; トップ</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+<div align="center">
+<span class="L">● メールフォームCGI　管理トップ ●</span><br>
+<br>
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td bgcolor="#CCCCCC"><table border="0" cellspacing="1" cellpadding="5">
+				  <tr>
+					  <td bgcolor="#EEEEEE"><span class="M">・基本情報設定</span></td>
+					  <form action="$admin_script" method="post">
+							<input type="hidden" name="mode" value="kihon">
+							<input type="hidden" name="passwd" value="!passwd!">
+						      <td bgcolor="#FFFFFF"><input type="submit" name="Submit" value="GO">
+       </td>
+      </form>
+				  </tr>
+				  <tr>
+					  <td bgcolor="#EEEEEE"><span class="M">・</span><span class="M">通知（管理者宛）メール編集</span></td>
+ <form action="$admin_script" method="post">
+							<input type="hidden" name="mode" value="mail_admin">
+							<input type="hidden" name="passwd" value="!passwd!">
+						      <td bgcolor="#FFFFFF"><input type="submit" name="Submit" value="GO">
+ </td>
+      </form>
+				  </tr>
+				  <tr>
+					  <td bgcolor="#EEEEEE"><span class="M">・</span><span class="M">確認（者宛）メール編集</span></td>
+					  <form action="$admin_script" method="post">
+							<input type="hidden" name="mode" value="mail_henshin">
+							<input type="hidden" name="passwd" value="!passwd!">
+						      <td bgcolor="#FFFFFF"><input type="submit" name="Submit" value="GO">
+       </td>
+      </form>
+				  </tr>
+			  </table>
+ </td>
+	</tr>
+</table>
+</div>
+<SCRIPT Language="JavaScript">
+<!--
+document.write("<img src='http://www.showa-alumi-pole.com/cgi/acc/acclog.cgi?");
+document.write("referrer="+document.referrer+"&");
+document.write("width="+screen.width+"&");
+document.write("height="+screen.height+"&");
+document.write("color="+screen.colorDepth+"'>");
+// -->
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,340 @@
+@charset "Shift_JIS";
+
+/* 段落＋テキスト
+----------------------------------------------------*/
+
+#contents p {
+	margin-bottom:10px;
+}
+
+#contents .fontSS { font-size:xx-small; }
+#contents .fontS { font-size:x-small; }
+#contents .fontM { font-size:medium; }
+#contents .fontL { font-size:large; }
+#contents .fontLL { font-size:x-large; }
+
+
+/* 強調
+----------------------------------------------------*/
+
+#contents strong.red { color:#CC0000; font-weight:normal; }
+#contents strong.redBold { color:#CC0000; font-weight:bold; }
+#contents strong.blue { color:#1B50A9; font-weight:normal; }
+#contents strong.blueBold { color:#1B50A9; font-weight:bold; }
+#contents strong.brown { color:#C77E1D; font-weight:normal; }
+#contents strong.brownBold { color:#C77E1D; font-weight:bold; }
+
+/* 見出し
+----------------------------------------------------*/
+
+#contents h1  {
+	margin:0 0 20px 0;
+}
+
+#contents h2.normal  {
+	margin:10px 0;
+}
+
+#contents h2.heading  {
+	background:url(/common_images/bg_h2_01.gif) no-repeat left .5em;
+	width:564px;
+	padding:10px 0 0 16px;
+	margin:10px 0 15px 0;
+}
+
+#contents h2.heading.full  {
+	background:url(/common_images/bg_h2_01_full.gif) no-repeat top left;
+	width:764px;
+	padding:6px 0 0 16px;
+	margin:10px 0 20px 0;
+}
+
+#contents h1 span,
+#contents h2 span {
+	display:none;
+}
+
+#contents .heading_title  {
+	background:url(/common_images/bg_h_02.gif) no-repeat 0 bottom;
+	width:564px;
+	padding:2px 0 0 16px;
+	font-size:95%;
+	color:#333;
+	font-weight:bold;
+	height:24px
+}
+
+#contents .heading01  {
+	color:#C77E1D;
+	margin-bottom:10px;
+}
+
+/* 定義リスト
+----------------------------------------------------*/
+
+#contents dl.dl01 {
+	line-height:1.5;
+}
+
+#contents dl.dl01 dt {
+	color:#C77E1D;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+#contents dl.dl01 dd {
+	margin-bottom:15px;
+}
+
+
+
+/* ボックス
+----------------------------------------------------*/
+
+#contents div.normalBox  {
+	width:564px;
+	margin:0 0 20px 16px;
+}
+
+#contents div.centerBox  {
+	text-align:center;
+}
+
+#contents div.rightBox  {
+	float:right;
+	padding:0 0 10px 10px;
+}
+
+#contents div.leftBox  {
+	float:left;
+	padding:0 10px 10px 0;
+}
+
+/* リスト
+----------------------------------------------------*/
+
+ul.unordered01 li  {
+	background:url(/common_images/icon_list_01.gif) no-repeat left 0.6em;
+	line-height:1.5;
+	padding:0 0 0 8px;
+}
+
+ul.unordered02 li  {
+	text-indent:-1em;
+	line-height:1.5;
+	padding-left:1em;
+}
+
+ul.unordered03 li  {
+	background:url(/common_images/icon_list_02_b.gif) no-repeat left 0.6em;
+	line-height:1.5;
+	padding:0 0 0 10px;
+}
+
+ul.unordered03 li a:link strong.name {	color:#C77E1D; text-decoration:underline;}
+ul.unordered03 li a:visited strong.name  {	color:#C77E1D; text-decoration:underline;}
+ul.unordered03 li a:hover strong.name  {	color:#C77E1D; text-decoration:none;}
+ul.unordered03 li a:active strong.name  {	color:#C77E1D; text-decoration:underline;}
+
+
+#contents ul.art li {
+	float:left;
+	padding:0 10px 10px 0;
+}
+
+#contents ul.art li.edge  {
+	padding:0;
+}
+
+#contents ol.ordered01,
+#contents ol.ordered02 {
+	margin:0 0 10px 0;
+}
+
+#contents ol.ordered01 li {
+ padding:0 0 0 18px;
+	margin:0 0 5px 0;
+}
+
+#contents ol.ordered02 li {
+ padding:0 0 0 18px;
+	margin:0 0 5px 0;
+}
+
+#contents ol.ordered01 {	background: url(/common_images/icon_ordered01_01.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number02 {	background: url(/common_images/icon_ordered01_02.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number03 {	background: url(/common_images/icon_ordered01_03.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number04 {	background: url(/common_images/icon_ordered01_04.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number05 {	background: url(/common_images/icon_ordered01_05.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number06 {	background: url(/common_images/icon_ordered01_06.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number07 {	background: url(/common_images/icon_ordered01_07.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number08 {	background: url(/common_images/icon_ordered01_08.gif) left 0.1em no-repeat;}
+#contents ol.ordered01 li.number09 {	background: url(/common_images/icon_ordered01_09.gif) left 0.1em no-repeat;}
+
+#contents ol.ordered02 {	background: url(/common_images/icon_ordered02_01.gif) no-repeat left 0.2em;}
+#contents ol.ordered02 li.number02 {	background: url(/common_images/icon_ordered02_02.gif) no-repeat left 0.2em;}
+#contents ol.ordered02 li.number03 {	background: url(/common_images/icon_ordered02_03.gif) left 0.1em no-repeat;}
+#contents ol.ordered02 li.number04 {	background: url(/common_images/icon_ordered02_04.gif) left 0.1em no-repeat;}
+#contents ol.ordered02 li.number05 {	background: url(/common_images/icon_ordered02_05.gif) left 0.1em no-repeat;}
+#contents ol.ordered02 li.number06 {	background: url(/common_images/icon_ordered02_06.gif) left 0.1em no-repeat;}
+#contents ol.ordered02 li.number07 {	background: url(/common_images/icon_ordered02_07.gif) left 0.1em no-repeat;}
+#contents ol.ordered02 li.number08 {	background: url(/common_images/icon_ordered02_08.gif) left 0.1em no-repeat;}
+#contents ol.ordered02 li.number09 {	background: url(/common_images/icon_ordered02_09.gif) left 0.1em no-repeat;}
+
+
+
+/* hidden
+----------------------------------------------------*/
+
+.hidden {
+	display:none;
+}
+
+
+/* side menu
+----------------------------------------------------*/
+
+#side-contents div.menu {
+ width:163px;
+	border-bottom:solid 1px #B3CCF2;
+	border-left:solid 1px #B3CCF2;
+	border-right:solid 1px #B3CCF2;
+	padding:10px 5px 10px 10px;
+	background-color:#F8FAFE;
+	margin-bottom:20px;
+}
+
+#side-contents div.menu ul li {
+	margin-bottom:10px;
+	background:url(/common_images/bg_side_dotline_01.gif) no-repeat left bottom;
+	padding:0 0 12px 5px;
+}
+
+#side-contents div.menu ul li strong.new {
+	padding-right:30px;
+	background:url(/common_images/icon_new_01.gif) no-repeat right .2em;
+	margin-right:-30px;
+}
+
+#side-contents div.menu ul li.end {
+	background:none;
+	padding-bottom:0;
+}
+
+
+/* table
+----------------------------------------------------*/
+
+#contents table.type01  {
+	width:580px;
+	border-collapse:separate;
+	border-top:solid 1px #999999;
+	border-left:solid 1px #999999;
+	font-size:small;
+}
+
+#contents table.type01 th,
+#contents table.type01 td  {
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #999999;
+	padding:5px;
+	text-align:center;
+	font-weight:normal;
+}
+
+#contents table.type01 tr.top th  {
+	background-color:#F2D2A8;
+}
+
+#contents table.type01 tr.col th.left  {
+	background-color:#FAEBD8;
+	font-weight:bold;
+	color:#9A6216;
+}
+
+
+/* サイド
+----------------------------------------------------*/
+
+#side-contents div.inq {
+	margin-bottom:20px;
+}
+
+#side-contents ul.banner li {
+	margin-bottom:15px;
+}
+
+#side-contents ul.banner li img {
+	vertical-align:bottom;
+}
+
+/* ページトップ
+----------------------------------------------------*/
+
+#contents div.pagetop p {
+	background:url(/common_images/icon_pagetop.gif) no-repeat left 0.2em;
+	padding:0 0 0 13px;
+	float:right;
+	font-size:x-small;
+	margin:0;
+}
+
+
+.expired {
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+/* ページトップ
+----------------------------------------------------*/
+
+#side-contents .ad_list dt {
+	margin: 30px 0 1px;
+	font-size:13px;
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	line-height: 1.2;
+	font-weight: bold;
+}
+
+#side-contents .ad_list dt a {
+	display: block;
+	padding: 10px 0 10px 18px;
+	text-decoration: none;
+}
+
+#side-contents .ad_list a:hover {
+	opacity: .8;
+}
+
+#side-contents .ad_list dt:first-child {
+	margin-top: 0;
+}
+
+#side-contents .ad_list dd {
+	margin-bottom: 1px;
+}
+
+#side-contents .ad_list dt.miyagawa a {
+	background: #E9E1CD url(/common_images/icon_arrow_01.png) no-repeat 7px 11px;
+	color: #663300;
+}
+
+#side-contents .ad_list dt.yamagoya a {
+	background: #E2F4BD url(/common_images/icon_arrow_02.png) no-repeat 7px 11px;
+	color: #00664C;
+}
+
+#side-contents .ad_list dt.machiya {
+	padding: 10px 0 10px 18px;
+	background: #E4DADA;
+	color: #333333;
+}
+
+#side-contents .ad_list dt.zemon a {
+	padding: 0;
+}
+
+
+
+

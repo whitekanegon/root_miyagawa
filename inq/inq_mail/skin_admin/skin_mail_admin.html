@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>メールフォームCGI　管理ページ &gt; 通知（管理者宛）メール編集</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<div align="center">
+<span class="L">● 通知（管理者宛）メール編集 ●</span><br>
+<br>
+<form action="$admin_script" method="post">
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td bgcolor="#CCCCCC"><table border="0" cellspacing="1" cellpadding="5">
+				<tr>
+							<td bgcolor="#EEEEEE"><span class="M">・メールサブジェクト<br>
+ 						</span></td>
+							<td bgcolor="#FFFFFF"><input name="admin_subject" type="text" value="$admin_subject" size="50">
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" bgcolor="#EEEEEE"><span class="M">・メール内容<br>
+  						<br>
+						以下の語句を記述しますと、<br>
+						それぞれ指定のデータに<br>
+						置き換わります。</span><br>
+						<br>
+						<span class="S"><font color="#CC0000">＊必ず半角で入力して下さい。</font></span><br>
+						<br>
+						<table border="1" cellpadding="3" cellspacing="0" bordercolor="#BBBBBB">
+									<tr bgcolor="#CCCCCC">
+      				<td><span class="M"><b>語句</b></span></td>
+										<td><span class="M"><b>置き換えデータ</b></span></td>
+									</tr>
+									<tr>
+      				<td bgcolor="#FFFFFF"><span class="M">!email!</span></td>
+										<td bgcolor="#FFFFFF"><span class="M">申込者のEmail	</span></td>
+									</tr>
+      			<tr>
+      				<td bgcolor="#FFFFFF"><span class="M">!date!</span></td>
+										<td bgcolor="#FFFFFF"><span class="M">受付日時</span></td>
+									</tr>
+      			<tr bgcolor="#FFFFFF">
+         	<td valign="top"><span class="M">追加したフォームの<br>
+		!name属性!<br>
+		<br>
+		例）<br>
+		name=&quot;ご連絡事項&quot;<br>
+		であれば<br>
+		!ご連絡事項! </span></td>
+         	<td valign="top"><span class="M">追加したフォームに<br>
+		入力された内容 </span></td>
+     				</tr>
+   	</table></td>
+							<td valign="top" bgcolor="#FFFFFF">
+<textarea name="admin_mailformat" cols="62" rows="30">$admin_mailformat</textarea>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<br>
+<input type="hidden" name="regist" value="1">
+		<input type="hidden" name="passwd" value="!passwd!">
+		<input type="hidden" name="back_mode" value="mail_admin">
+<input type="submit" name="Submit" value="設定">
+</form>
+<br>
+ <table border="0" cellspacing="0" cellpadding="2">
+ 	<tr>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<td><input type="submit" name="Submit" value="トップ">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="kihon">
+ 			<td><input type="submit" name="Submit" value="基本情報">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="mail_admin">
+ 			<td><input type="submit" name="Submit" value="通知メール">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="mail_henshin">
+ 			<td><input type="submit" name="Submit" value="確認メール">
+				</td>
+			</form>
+		</tr>
+ 	</table>
+</div>
+<SCRIPT Language="JavaScript">
+<!--
+document.write("<img src='http://www.showa-alumi-pole.com/cgi/acc/acclog.cgi?");
+document.write("referrer="+document.referrer+"&");
+document.write("width="+screen.width+"&");
+document.write("height="+screen.height+"&");
+document.write("color="+screen.colorDepth+"'>");
+// -->
+</SCRIPT>
+</body>
+</html>

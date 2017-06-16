@@ -1,0 +1,83 @@
+@charset "Shift_JIS";
+
+
+#contents.index {
+	width:618px;
+	float:none;
+	margin:0 auto;
+	text-align:center;
+	padding-top:20px;
+}
+
+#contents #vi {
+	margin-bottom:50px;
+}
+
+#contents h1 {
+	margin-bottom:35px;
+}
+
+#contents .date,
+#contents .artist {
+	text-align:center;
+}
+
+#contents h2 {
+	border-bottom:solid 1px #E7327E;
+	color:#E6327E;
+	text-align:center;
+	font-size:24px;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	line-height:1;
+}
+
+#contents p,
+#contents li {
+	font-size:16px;
+}
+
+#contents .date p {
+	font-size:24px;
+	margin-bottom:50px;
+	line-height:1;
+}
+
+#contents .artist p.name {
+	font-size:25px;
+	margin-bottom:10px;
+	line-height:1;
+}
+
+#contents .artist .detail {
+	background:#ECE9E6;
+	padding:20px;
+	margin:20px 0 50px;
+	text-align:left;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+
+#contents .artist .detail p {
+	margin-bottom:15px;
+}
+
+#contents .artist .detail p:last-child {
+	margin-bottom:0;
+}
+
+#contents .artist .detail ul {
+	text-align:center;
+	margin-bottom:15px;
+}
+
+#contents .artist .detail li {
+	display:inline-block;
+	margin:0 5px;
+}
+
+
+
+
+

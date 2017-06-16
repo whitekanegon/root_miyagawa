@@ -1,0 +1,64 @@
+@charset "Shift_JIS";
+
+
+/* Ç®ñ‚Ç¢çáÇÌÇπ
+----------------------------------------------------*/
+
+#contents div.inq_tbl table {
+	margin-bottom:15px;
+}
+
+#contents div.inq_tbl th {
+	background-color:#FAEBD8;
+	color:#9A6216;
+	font-weight:bold;
+	text-align:left;
+	width:30%;
+}
+
+#contents div.inq_tbl td {
+	text-align:left;
+	width:70%;
+}
+
+#contents div.inq_tbl textarea {
+	font-size:small;
+}
+
+#contents div.inq_tbl input.name {
+	width:150px;
+}
+
+#contents div.inq_tbl input.email {
+	width:250px;
+}
+
+#contents div.inq_tbl textarea {
+	width:350px;
+	height:100px;
+}
+
+#contents div.inq_tbl input.submit {
+	width:100px;
+	text-align:center;
+}
+
+#contents div.inq_tbl ul.button {
+	text-align:center;
+}
+
+#contents div.inq_tbl ul.button li {
+	display:inline;
+	margin:0 15px;
+}
+
+#contents div.inq_tbl ul.kind li {
+	padding:3px 0;
+}
+
+#contents div.inq_tbl p.teikyu {
+	margin:0 0 0 1.5em;
+	font-size:90%;
+}
+
+

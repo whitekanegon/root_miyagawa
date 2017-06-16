@@ -1,0 +1,358 @@
+@charset "Shift_JIS";
+
+/* トップ
+----------------------------------------------------*/
+
+#contents ul.monthentry {
+	width:812px;
+	margin-right:-33px;
+}
+
+#contents ul.monthentry li {
+	width:170px;
+	float:left;
+	padding-right:33px;
+	text-align:center;
+}
+
+#contents ul.monthentry li a:link strong.name {	color:#C77E1D; text-decoration:underline;}
+#contents ul.monthentry li a:visited strong.name  {	color:#C77E1D; text-decoration:underline;}
+#contents ul.monthentry li a:hover strong.name  {	color:#C77E1D; text-decoration:none;}
+#contents ul.monthentry li a:active strong.name  {	color:#C77E1D; text-decoration:underline;}
+
+#contents ul.monthentry li.end {
+	padding-right:0;
+}
+
+#contents ul.monthentry li img {
+	margin-bottom:10px;
+}
+
+#contents div.schedule {
+	margin:0 0 40px 15px;
+}
+
+#contents div.schedule li div.image {
+	float:left;
+	width:200px;
+}
+
+#contents div.schedule li div.detail {
+	float:left;
+	padding:10px 0 0 35px;
+	overflow:hidden;
+}
+
+#contents div.schedule li div.detail h3 {
+	font-size:123.1%;
+	margin-bottom:15px;
+}
+
+#contents div.schedule.takada li div.detail h3 {
+	font-size:25px;
+	text-align:center;
+	line-height:1.5;
+	margin:20px 0; 
+}
+
+#contents div.schedule li div.detail h3 a {
+	color:#C77E1D;
+}
+
+#contents div.schedule li div.box01 {
+	background-color:#F0F0F0;
+	padding:10px 15px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	margin-bottom:10px;
+}
+
+#contents div.schedule li div.box01 dt,
+#contents div.schedule li div.box01 dd {
+	float:left;
+	line-height:1.6;
+	font-weight:bold;
+	font-size:108%;
+}
+
+
+#contents div.schedule li div.box01 dt {
+	clear:both;
+}
+
+
+
+
+
+
+
+/* 個別ページ
+----------------------------------------------------*/
+
+#contents div.profile {
+	width:550px;
+	background:url(/exhibition/image_dir/bg_artist.gif) no-repeat 0 0;
+	padding:15px;
+	margin-bottom:20px;
+}
+
+#contents dl.artist dt {
+	color:#C77E1D;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+#contents dl.artist dt.line {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: solid 1px #ccc;
+}
+
+#contents dl.artist.double {
+	width:275px;
+	float:left;
+}
+
+#contents div.profile div.backnumber {
+	margin-top:20px;
+}
+
+#contents div.profile div.backnumber h2 {
+	color:#C77E1D;
+	margin-bottom:10px;
+	font-size:small;
+}
+
+#contents div.profile div.backnumber li {
+	margin-bottom:5px;
+}
+
+
+
+#contents ul.biography li {
+	background:url(/common_images/icon_list_01.gif) no-repeat left 0.6em;
+	line-height:1.2;
+	margin:0 0 5px 0;
+	padding:0 0 0 8px;
+}
+
+#contents ul.biography li span.day {
+	display:block;
+	float:left;
+	width:100px;
+}
+
+#contents ul.biography li span.detail {
+	display:block;
+	float:left;
+	width:440px;
+}
+
+#contents ul.biography li:after {
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	line-height:0;
+	clear:both;
+}
+
+#contents ul.biography li {
+	display:inline-block;
+	min-height:1%;
+}
+
+/* Hide macIE \*/
+* html #contents ul.biography li {
+ height:1%;
+}
+
+#contents ul.biography li {
+ display:block;
+}
+/* /Hide macIE */
+
+#contents div.pickup_photo {
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#contents div.pickup_photo div.player {
+	background-color:#000;
+	width:400px;
+}
+
+#contents div.pickup_photo img {
+	padding:7px;
+	border:solid 1px #DDD;
+}
+
+#contents div.pickup_photo02 {
+	padding:7px;
+	border:solid 1px #DDD;
+	margin:0 auto 10px;
+	width:400px;
+}
+
+#contents div.pickup_photo02 a {
+	display:block;
+	background:#EBE4D2;
+	text-align:center;
+	height:300px;
+}
+
+#contents div.pickup_photo02 a img {
+	max-width:400px;
+	max-height:300px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#contents ul.thumbs {
+	width:600px;
+	margin:0 0 20px 0;
+}
+
+#contents ul.thumbs li {
+	float:left;
+	padding-right:10px;
+	width:140px;
+}
+
+#contents ul.thumbs li img {
+	padding:4px;
+	border:solid 1px #DDD;
+}
+
+#contents ul.thumbs li.large {
+	width:280px;
+}
+
+#contents ul.thumbs02 {
+	width:600px;
+	overflow:hidden;
+}
+
+#contents ul.thumbs02 li {
+	float:left;
+	margin:0 10px 10px 0;
+	padding:4px;
+	border:solid 1px #DDD;
+}
+
+#contents ul.thumbs02 li a {
+	display:block;
+	background:#EBE4D2;
+	text-align:center;
+	width:130px;
+	height:97px;
+}
+
+#contents ul.thumbs02 li a img {
+	max-width:130px;
+	max-height:97px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#contents .youtube01 {
+	margin:0 auto 20px;
+	width:560px;
+}
+
+#contents .photo_main {
+	margin:0 auto 20px;
+	width:560px;
+	height: 315px;
+	overflow: hidden;
+	position: relative;
+}
+
+#contents .photo_main img {
+	width:560px;
+	height: auto;
+}
+
+
+#contents ul.thumbs03 {
+	overflow:hidden;
+}
+
+#contents ul.thumbs03 li {
+	float:left;
+	margin:0 0 10px 10px;
+	width: 180px;
+	height: 120px;
+	overflow: hidden;
+	position: relative;
+}
+
+#contents ul.thumbs03 li img {
+	width:180px;
+	height: auto;
+}
+
+#contents .photo_main img,
+#contents ul.thumbs03 li img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#contents div.pickup_photo div.player {
+	background-color:#000;
+	width:416px;
+	margin:0 auto;
+}
+
+#contents ul.thumbs li div.player {
+	background-color:#000;
+}
+
+#contents div.player img {
+	border:none !important;
+	padding:0 !important;
+}
+
+#contents div.player p {
+	margin:0;
+}
+
+#contents div.loading {
+	height:24px;
+	background:url(/exhibition/image_dir/play_loading.gif) no-repeat center center;
+}
+
+#contents div.player p.play,
+#contents div.player p.stop {
+	height:12px;
+	padding:6px 0;
+	text-align:center;
+}
+
+/* 経歴 */
+#contents .reki {
+	border-bottom:solid 1px #333;
+	padding-bottom:15px;
+}
+
+#contents .reki li {
+	padding-left:5em;
+	position:relative;
+}
+
+#contents .reki li span {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+

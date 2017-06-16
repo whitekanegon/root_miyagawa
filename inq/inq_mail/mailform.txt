@@ -1,0 +1,38 @@
+<h3 class="Header_h2"><img src="/navi/common_images/icon_title_01.gif" alt="" width="4" height="11" align="absmiddle"><img src="/navi/common_images/spacer.gif" width="10" height="1">お問い合わせ</h3>
+<p>お問い合わせはお気軽に！<br>
+	お名前とご希望のご連絡先をご入力ください。</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="formtable">
+	<tr>
+		<th scope="row"><label for="name">お名前</label></th>
+		<td><img src="/navi/common_images/icon_nessesary_01.gif" alt="必須" width="25" height="14" hspace="5" vspace="3"></td>
+		<td><input type="text" id="name" name="name" value="" title="お名前を入力して下さい。"  class="formwide01 imeZen"></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="telephone">電話番号</label></th>
+		<td><img src="/navi/common_images/icon_nessesary_01.gif" alt="必須" width="25" height="14" hspace="5" vspace="3"></td>
+		<td><input type="text" id="telephone" name="tel_number" value="" title="電話番号を入力して下さい。"  class="formwide01 imeHan">
+			<input name="callback" type="radio" id="callTel" value="電話に返事が欲しい" checked>
+			<label for="callTel">電話に返事が欲しい</label></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="email">E-mail</label></th>
+		<td>&nbsp;</td>
+		<td><input type="text" id="email" name="mail" value="" title="E-mailを入力して下さい。"  class="formwide01 imeHan"onchange="SetVisible(true)">
+			<input name="callback" type="radio" value="E-Mailに返事が欲しい" id="callEmail">
+			<label for="callEmail">E-Mailに返事が欲しい</label></td>
+	</tr>
+	<tr>
+		<th scope="row">メッセージ</th>
+		<td><img src="/navi/common_images/icon_nessesary_01.gif" alt="必須" width="25" height="14" hspace="5" vspace="3"></td>
+		<td><textarea cols="40" rows="10" name="memo" onFocus="if (value == 'ご連絡に関するメッセージの他にも、お部屋のこだわりポイントなども教えてくださいね！') { value = ''; }" onBlur="if (value == '') { value = 'ご連絡に関するメッセージの他にも、お部屋のこだわりポイントなども教えてくださいね！'; }"  class="formwide02 imeZen" value="">ご連絡に関するメッセージの他にも、お部屋のこだわりポイントなども教えてくださいね！</textarea></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><p>上記物件以外にも茨木市内を中心に多数の物件がございます。<br>
+				ご希望をお知らせいただければ、上記物件以外のお部屋もご紹介させていただきます！</p></td>
+		<td><img src="/navi/common_images/spacer.gif" width="15" height="1"></td>
+		<td align="right" valign="top"><input type="image" src="/navi/common_images/btn_form_submit01.gif" alt="問い合わせる（確認画面へ）"></td>
+	</tr>
+</table>
+<p class="bukkenbanner01"><a href="/navi/about/index.html"><img src="/navi/house_info/detail/image_dir/p_toiawase_01.gif" alt="いてもたってもいられない方は、三和住宅072-624-0234までご連絡ください！" border="0"></a></p>

@@ -1,0 +1,43 @@
+@charset "Shift_JIS";
+
+/* VI
+----------------------------------------------------*/
+/*
+#contents div.sitemap li.sm01 {
+	width:170px;
+	float:left;
+	padding-left:23px;
+}
+
+#contents div.sitemap li.sm02 {
+	width:363px;
+	float:left;
+	padding-left:23px;
+}
+*/
+
+#contents div.sitemap li li {
+	background:url(/common_images/icon_dotarrow.gif) no-repeat 0 .6em;
+	padding-left:12px;
+	margin-bottom:15px;
+	font-weight:bold;
+}
+
+#contents div.sitemap li li ul {
+	padding-top:10px;
+}
+
+#contents div.sitemap li li li {
+	background:url(/common_images/icon_dot_link.gif) no-repeat 0 .8em;
+	padding-left:12px;
+	margin-bottom:10px;
+	font-weight:normal;
+}
+
+#contents div.sitemap li li.tenji li {
+	background:url(/common_images/icon_dot_link.gif) no-repeat 0 .8em;
+	padding-left:12px;
+	margin-bottom:10px;
+}
+
+

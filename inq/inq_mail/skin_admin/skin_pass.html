@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>メールフォームCGI　管理ページ &gt; 入室</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript">
+<!--
+function FocusPass(){
+	document.forms[0].passwd.focus();
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" onLoad="FocusPass()">
+<div align="center">
+<span class="L">■パスワードを入力してください。■</span>
+<br>
+ <br>
+!msg!
+ <br>
+ <form action="$admin_script" method="post">
+  <input name="passwd" type="password" size="10">
+		<br>
+		<br>
+		<input type="submit" name="Submit" value="入室">
+ </form>
+</div>
+<SCRIPT Language="JavaScript">
+<!--
+document.write("<img src='http://www.showa-alumi-pole.com/cgi/acc/acclog.cgi?");
+document.write("referrer="+document.referrer+"&");
+document.write("width="+screen.width+"&");
+document.write("height="+screen.height+"&");
+document.write("color="+screen.colorDepth+"'>");
+// -->
+</SCRIPT>
+</body>
+</html>

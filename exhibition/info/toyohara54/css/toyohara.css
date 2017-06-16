@@ -1,0 +1,109 @@
+@charset "Shift_JIS";
+
+/* wawawa
+----------------------------------------------------*/
+
+body {
+	font:small '‚l‚r ‚oƒSƒVƒbƒN','MS PGothic','ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','osaka',"Verdana","Arial","Helvetica",sans-serif;
+	*font-size:small;
+	*font:x-small;
+}
+
+.text09 { font-size:77%; }
+.text10 { font-size:85%; }
+.text11 { font-size:93%; }
+.text12 { font-size:100%; }
+.text13 { font-size:108%; }
+.text14 { font-size:116%; }
+.text15 { font-size:123.1%; }
+.text16 { font-size:131%; }
+.text17 { font-size:138.5%; }
+.text18 { font-size:146.5%; }
+.text19 { font-size:153.9%; }
+.text20 { font-size:161.6%; }
+.text21 { font-size:167%; }
+.text21 { font-size:174%; }
+.text23 { font-size:182%; }
+.text24 { font-size:189%; }
+.text25 { font-size:197%; }
+
+
+p,dt,dd,li,th,td,input,textarea {	font-size:108%;}
+
+#contents.full {
+	width: auto;
+}
+
+#contents p {
+	line-height:1.8;
+	font-size:108%;
+	margin-bottom:10px;
+}
+
+#contents h1 {
+	margin-bottom:30px;
+}
+
+#contents .date,
+#contents .artist {
+	text-align:center;
+}
+
+#contents .date h2 {
+	border-bottom:solid 2px #D2AABA;
+	color:#E5327E;
+	text-align:center;
+	font-size:30px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	line-height:1;
+}
+
+#contents .date p {
+    font-size: 30px;
+    margin-bottom: 50px;
+    line-height: 1;
+}
+
+#contents .artist h2  {
+	color:#E5327E;
+	text-align:center;
+	font-size:30px;
+	padding-bottom:10px;
+}
+
+
+#contents div.box01 {
+	border-top:solid 2px #D2AABA;
+	background:url(../img/bg_43th_01.jpg);
+	padding:15px 0;
+	text-align:center;
+}
+
+#contents div.box01 .h01,
+#contents div.box01 p {
+	margin-bottom:20px;
+}
+
+#contents div.box02 {
+	background-color:#F9F9F9;
+	padding:20px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+#contents div.box02 dt {
+	float:left;
+	width:7em;
+	font-weight:bold;	
+	line-height:1.6;
+}
+
+#contents div.box02 dd {
+	padding-left:7em;
+	line-height:1.6;
+}
+
+
+
+

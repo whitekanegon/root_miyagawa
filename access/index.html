@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>連絡及びアクセス｜京・ギャラリー宮川町</title>
+<meta name="description" content="京・ギャラリー宮川町の連絡及びアクセスのご案内。京都の東山区、鴨川沿いの宮川町通にあるアートスペースです。京都市街地、四条河原町から徒歩５分と、非常に交通の便のよいところにあります。個展・趣味・お稽古事の発表、またお仲間との共同展などにお使いいただく、手ごろなスペースです。" />
+<meta name="keywords" content="ギャラリー,京都,画廊,アートスペース,レンタル スペース,個展,絵画,展示,作品 発表,東山,鴨川,宮川町" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" media="screen,all" href="/common_css/common.css" />
+<link rel="stylesheet" type="text/css" media="screen,all" href="/access/css/index.css" />
+<script type="text/javascript" src="/common_js/common.js"></script>
+<script type="text/javascript">
+// Google map
+
+var iconimg = [
+	['/access/image_uniq/icon_maplogo.png', '213', '35','/access/image_uniq/icon_maplogo_shadow.png','213','35','0','32']
+]
+
+//<![CDATA[
+var map = null;
+var geocoder = null;
+
+function GMapload() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map"));
+		map.addControl(new GSmallMapControl());
+		map.setCenter(new GLatLng(35.644934, 139.699166), 13);
+		geocoder = new GClientGeocoder();
+		moveAddress(address);
+	}
+}
+
+function moveAddress(address) {
+	addAry = address.split('&');
+	for (i = 0; i < addAry.length; i++) {
+		if (addAry[i].indexOf('.') == -1) {
+			if (geocoder) {
+				(function (n) {
+					geocoder.getLatLng(
+					addAry[n], function (latlng) {
+						if (!latlng) {
+							alert(addAry[n] + "は見つかりませんでした");
+						} else {
+							if (n == 0) map.setCenter(latlng, 16);
+							markerAdd(n, latlng);
+						}
+					})
+				})(i);
+			}
+		} else {
+			lat = addAry[i].split(',')
+			latlng = new GLatLng(lat[0], lat[1]);
+			if (i == 0) map.setCenter(latlng, 16);
+			markerAdd(i, latlng);
+		}
+	}
+}
+
+function markerAdd(Num, latlng) {
+	var icon = new GIcon();
+	icon.image = iconimg[Num][0];
+	icon.iconSize = new GSize(iconimg[Num][1], iconimg[Num][2]);
+	if(iconimg[Num][3]) {
+		icon.shadow = iconimg[Num][3];
+		icon.shadowSize = new GSize(iconimg[Num][4], iconimg[Num][5]);
+	}
+	icon.iconAnchor = new GPoint(iconimg[Num][6], iconimg[Num][7]);
+	var marker = new GMarker(latlng, icon);
+	map.addOverlay(marker);
+}
+//]]>
+</script>
+</head>
+<body onload="GMapload();" onunload="GUnload()">
+<div id="container">
+	<!-- [header] -->
+	<div id="header">
+		<div class="logo"><a href="/index.html"><img src="/common_images/p_logo.gif" alt="京・ギャラリー宮川町" width="384" height="24" /></a></div>
+		<div class="hmenu">
+			<ul>
+				<li class="sitemap"><a href="/sitemap.html"><img src="/common_images/hn_sitemap_f.gif" alt="サイトマップ" width="72" height="10" /></a></li>
+				<li class="inq"><a href="/inq/"><img src="/common_images/hn_inq_f.gif" alt="お問い合わせ" width="72" height="10" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /[header] -->
+	<!-- [global navi] -->
+	<div id="global_navi">
+		<ul>
+			<li><a href="/layout/"><img src="/common_images/gn01_f.gif" alt="スペース・レイアウト" width="156" height="30" /></a></li>
+			<li><a href="/fee/"><img src="/common_images/gn03_f.gif" alt="使用料" width="156" height="30" /></a></li>
+			<li><img src="/common_images/gn02_h.gif" alt="連絡及びアクセス" width="156" height="30" /></li>
+			<li><a href="/faq/"><img src="/common_images/gn04_f.gif" alt="よくあるご質問" width="156" height="30" /></a></li>
+			<li><a href="/exhibition/"><img src="/common_images/gn05_f.gif" alt="展示の様子" width="156" height="30" /></a></li>
+		</ul>
+	</div>
+	<!-- [topicpath] -->
+	<div id="topicpath"><a href="/index.html">トップ</a> &gt; 連絡及びアクセス</div>
+	<!-- /[topicpath] -->
+	<!-- /[global navi] -->
+	<div id="main_contents">
+		<!-- [contents] -->
+		<div id="contents">
+			<h1><img src="/access/image_dir/p_access_title.gif" alt="" width="580" height="26" /><span>連絡及びアクセス</span></h1>
+			<div class="normalBox clearfix">
+				<div class="rightBox"><img src="/common_images/p_map_small.gif" alt="団栗橋公園角東下ル　50m" width="353" height="253" /></div>
+				<p>〒605-0801<br />
+					京都市東山区宮川筋2丁目252</p>
+				<ul class="b_m10">
+					<li>TEL：090-7490-7851<br />
+（担当：金田）</li>
+					<li>TEL/FAX：075-561-8243</li>
+				</ul>
+				<ul class="unordered01 b_m15">
+					<li>JR京都駅より、タクシー15分</li>
+					<li>阪急電鉄 京都線 河原町駅終点より、徒歩6分程</li>
+					<li>京阪電鉄 祇園四条駅団栗橋出口より、
+					徒歩50m</li>
+				</ul>
+				<p><img src="/access/image_uniq/p_index_05.gif" alt="とても便利な場所で、花街の一角です。" width="182" height="54" /></p>
+			</div>
+			<h2 class="heading">近郊地図</h2>
+			<div class="mapimg">
+				<!-- [Google map] -->
+				<script src="http://maps.google.com/maps?file=api&v=2.x&key=ABQIAAAAiMHZjTna382qQyP_w3vfHhQkMrfMPtIrXDs9INnbl1zFlBNMiBTMGrKjsuDAHu7mCY5RosgpfBXb6Q&ie=Shift_JIS&oe=SHIFT_JIS"	type="text/javascript" charset="Shift_JIS"></script>
+				<script type="text/javascript">var address = "35.001357783521485,135.77152401208877";</script>
+				<div id="map"></div>
+				<!-- /[Google map] -->
+				<div class="rightBox"><p>→ <a href="http://maps.google.co.jp/maps?q=%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E5%AE%AE%E5%B7%9D%E7%AD%8B2-252&oe=utf-8&rls=org.mozilla:ja:official&hl=ja&client=firefox-a&um=1&ie=UTF-8&hq=&hnear=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E5%AE%AE%E5%B7%9D%E7%AD%8B%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%95%EF%BC%92&gl=jp&ei=Zq5XTP38G43Qcdnwwe0I&sa=X&oi=geocode_result&ct=title&resnum=1&ved=0CBYQ8gEwAA" target="_blank">大きい地図で見る</a></p></div>
+			</div>
+		</div>
+		<!-- /[contents] -->
+		<!-- [side contents] -->
+		<div id="side-contents">
+			<script type="text/javascript">
+			rmenus_recent();
+			rbanner();
+			</script>
+			<div class="inq"><a href="/inq/"><img src="/common_images/btn_inq.jpg" width="180" height="38" alt="ギャラリーお問合せ" /></a></div>
+		<!--#include virtual="/inc/side_adlist.html" -->
+		</div>
+		<!-- /[side contents] -->
+	</div>
+	<!-- [footer] -->
+	<div id="footer">
+		<div class="pagetop">
+			<p><a href="#container">ページトップへ戻る</a></p>
+		</div>
+		<div id="footer_contents">
+			<address>
+			<strong>京・ギャラリー宮川町</strong><br />
+			605-0801　京都市東山区宮川筋2-252<br />
+			TEL：090-7490-7851　FAX：075-561-8243
+			</address>
+			<div class="copyright">Copyright 2008 Kyo Gallery Miyagawacho. All rights reserved.</div>
+		</div>
+	</div>
+	<!-- /[footer] -->
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "Shift_JIS";
+
+/* basic
+----------------------------------------------------*/
+@import "/common_css/base.css";
+
+/* clearfix
+----------------------------------------------------*/
+@import "/common_css/clearfix.css";
+
+/* structure
+----------------------------------------------------*/
+@import "/common_css/structure.css";
+
+/* component
+----------------------------------------------------*/
+@import "/common_css/component.css";
+
+/* shadowbox 
+----------------------------------------------------*/ 
+@import "fancybox/jquery.fancybox.css";
+
+/* parts
+----------------------------------------------------*/
+@import "/common_css/header.css";
+@import "/common_css/global_navi.css";
+@import "/common_css/side_contents.css";
+@import "/common_css/footer.css";

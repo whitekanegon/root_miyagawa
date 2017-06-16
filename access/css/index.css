@@ -1,0 +1,10 @@
+@charset "Shift_JIS";
+
+
+#contents div#map  {
+	width:578px;
+	height:500px;
+	border:solid 1px #CCC;
+	margin-bottom:10px;
+}
+

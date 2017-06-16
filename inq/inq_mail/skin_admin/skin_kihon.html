@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>メールフォームCGI　管理ページ &gt; 基本情報設定</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript">
+<!--
+function zaseki(sign){
+	with(document.forms[0]){
+		if(sign == "no"){
+			sekishu_naiyo.disabled = true;
+			sekishu_naiyo.style.backgroundColor='#D4D0C8';
+		}
+		else if(sign == "yes"){
+			sekishu_naiyo.disabled = false;
+			sekishu_naiyo.style.backgroundColor='#FFFFFF';
+		}
+	}
+}
+
+function zasekiload(){
+	with(document.forms[0]){
+		if(elements[5].checked == true){
+			sekishu_naiyo.style.backgroundColor='#D4D0C8';
+		}
+	}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF">
+<div align="center"><span class="L">● 基本情報設定 ●</span><br>
+<br>
+<form action="$admin_script" method="post">
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td bgcolor="#CCCCCC"><table border="0" cellspacing="1" cellpadding="5">
+  				<tr>
+  					<td bgcolor="#EEEEEE"><span class="M">・メール送信先（管理者）アドレス 1</span></td>
+							<td bgcolor="#FFFFFF"><input name="mailto_1" type="text" value="$mailto_1" size="40">
+			</td>
+						</tr>
+						<tr>
+  					<td bgcolor="#EEEEEE"><span class="M">・メール送信先（管理者）アドレス 2</span></td>
+							<td bgcolor="#FFFFFF"><input name="mailto_2" type="text" value="$mailto_2" size="40">
+			</td>
+						</tr>
+						<tr>
+  					<td bgcolor="#EEEEEE"><span class="M">・メール送信先（管理者）アドレス 3</span></td>
+							<td bgcolor="#FFFFFF"><input name="mailto_3" type="text" value="$mailto_3" size="40">
+			</td>
+						</tr>
+						<tr>
+      	<td bgcolor="#EEEEEE"><span class="M">・確認（申込者宛）メール</span></td>
+      	<td bgcolor="#FFFFFF"><input name="henshin_sign" type="radio" value="on"!checked1!>
+       		<span class="M">送る
+       		<input type="radio" name="henshin_sign" value="off"!checked2!>
+		送らない</span></td>
+						</tr>
+  				<tr>
+      	<td bgcolor="#EEEEEE"><span class="M">・完了画面URL</span></td>
+      	<td bgcolor="#FFFFFF"><span class="S"><font color="#CC0000">＊&quot;/&quot;、または&quot;http://&quot;から始めてください。</font></span><br>
+       		<input name="kanryo_url" type="text" value="$kanryo_url" size="40">
+     		</td>
+ 					</tr>
+  				<tr>
+  					<td bgcolor="#EEEEEE"><span class="M">・sendmailのパス</span></td>
+							<td bgcolor="#FFFFFF"><input name="sendmail_pas" type="text" value="$sendmail_pas" size="40">
+			</td>
+						</tr>
+  	</table></td>
+	</tr>
+</table>
+<br>
+		<input type="hidden" name="sekishu_naiyo" value="">
+		<input name="sekishu" type="hidden" value="no">
+		<input type="hidden" name="regist" value="1">
+		<input type="hidden" name="passwd" value="!passwd!">
+		<input type="hidden" name="back_mode" value="kihon">
+<input type="submit" name="Submit" value="設定">
+</form>
+<br>
+	<table border="0" cellspacing="0" cellpadding="2">
+ 	<tr>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<td><input type="submit" name="Submit" value="トップ">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="kihon">
+ 			<td><input type="submit" name="Submit" value="基本情報">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="mail_admin">
+ 			<td><input type="submit" name="Submit" value="通知メール">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="mail_henshin">
+ 			<td><input type="submit" name="Submit" value="確認メール">
+				</td>
+			</form>
+		</tr>
+ 	</table>
+</div>
+<SCRIPT Language="JavaScript">
+<!--
+document.write("<img src='http://www.showa-alumi-pole.com/cgi/acc/acclog.cgi?");
+document.write("referrer="+document.referrer+"&");
+document.write("width="+screen.width+"&");
+document.write("height="+screen.height+"&");
+document.write("color="+screen.colorDepth+"'>");
+// -->
+</SCRIPT>
+</body>
+</html>

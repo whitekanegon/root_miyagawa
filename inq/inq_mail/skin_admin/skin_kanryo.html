@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>メールフォームCGI　管理ページ &gt; 設定完了</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<div align="center">
+<span class="L">● 設定完了 ●</span><br>
+<br>
+<hr>
+<form action="$admin_script" method="post">
+<input type="hidden" name="passwd" value="!passwd!">
+<input type="hidden" name="mode" value="$back_mode">
+<input type="submit" name="Submit" value="設定画面に戻る">
+</form>
+<br>
+ <table border="0" cellspacing="0" cellpadding="2">
+ 	<tr>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<td><input type="submit" name="Submit" value="トップ">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="kihon">
+ 			<td><input type="submit" name="Submit" value="基本情報">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="mail_admin">
+ 			<td><input type="submit" name="Submit" value="通知メール">
+				</td>
+			</form>
+ 		<form action="$admin_script" method="post">
+ 			<input type="hidden" name="passwd" value="!passwd!">
+ 			<input type="hidden" name="mode" value="mail_henshin">
+ 			<td><input type="submit" name="Submit" value="確認メール">
+				</td>
+			</form>
+		</tr>
+ 	</table>
+</div>
+<SCRIPT Language="JavaScript">
+<!--
+document.write("<img src='http://www.showa-alumi-pole.com/cgi/acc/acclog.cgi?");
+document.write("referrer="+document.referrer+"&");
+document.write("width="+screen.width+"&");
+document.write("height="+screen.height+"&");
+document.write("color="+screen.colorDepth+"'>");
+// -->
+</SCRIPT>
+</body>
+</html>

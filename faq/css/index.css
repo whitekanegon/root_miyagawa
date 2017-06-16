@@ -1,0 +1,20 @@
+@charset "Shift_JIS";
+
+/* アンカーリスト
+----------------------------------------------------*/
+
+#contents ul.faq_anchor {
+	margin:0 0 40px 16px;
+}
+
+#contents ul.faq_anchor li {
+	background:url(/common_images/icon_dot_link.gif) no-repeat 0 .8em;
+	padding-left:12px;
+	margin-bottom:10px;
+}
+
+#contents ul.faq_anchor li a {
+	background:url(/common_images/icon_anchor_arrow.gif) no-repeat right .6em;
+	padding-right:12px;
+}
+
